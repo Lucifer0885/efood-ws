@@ -1,0 +1,30 @@
+{
+  "name": "efood-ws",
+  "module": "src/server.ts",
+  "version": "1.0.0",
+  "description": "WebSocket server for eFood application",
+  "author": "lucifer0885",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "scripts": {
+    "start": "bun --hot run src/server.ts",
+    "build": "bun build src/server.ts --outdir=dist --target=node",
+    "test": "bun test"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.2",
+    "axios": "^1.9.0",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1"
+  }
+}
